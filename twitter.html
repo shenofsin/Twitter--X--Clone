@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="./dist/output.css"> <!-- take more priority, later inserted -->
+
+</head>
+
+<body class="bg-black">
+    <!-- <h2 class="bg-amber-100">ALL X YEAHH</h2> -->
+    <!-- <main class="flex max-w-[1240px] w-full text-white font-semibold  mx-auto bg-black "> -->
+    <main class="w-screen min-w-0 xl:container flex m-auto bg-black  text-white font-semibold">
+
+        <div id="first" class="fixed xl:static -translate-x-full left-0 top-0 z-50 transition-all duration-300 ease-in-out xl:translate-x-0 w-auto flex  md:flex md:w-auto pr-4 first bg-black border-r border-gray-600 h-screen py-3 flex-col">
+            <div class ="flex justify-between">
+                <div class="logo mb-2 px-3">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class=" invert w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class = "flex xl:hidden cursor-pointer" id ="closeMenu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar flex flex-col gap-1.5 p-3 h-auto">
+
+                <ul
+                    class="[&>li]:cursor-pointer [&>li]:hover:bg-[#16181c] [&>li]:rounded-md [&>li]:transition-all [&>li]:duration-500 [&>li]:p-1 flex flex-col gap-0.5 md:gap-2">
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            home
+                        </span>
+                        <span class="text-xl md:text-xl">Home</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            search
+                        </span>
+                        <span class="text-xl md:text-xl">Explore</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            notifications
+                        </span>
+                        <span class="text-xl md:text-xl">Notifications</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            auto_awesome
+                        </span>
+                        <span class="text-xl md:text-xl">Grok</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            list_alt
+                        </span>
+                        <span class="text-xl md:text-xl">Lists</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            bookmark
+                        </span>
+                        <span class="text-xl md:text-xl">Bookmarks</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            groups
+                        </span>
+                        <span class="text-xl md:text-xl">Communities</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            workspace_premium
+                        </span>
+                        <span class="text-xl md:text-xl">Premium</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            person
+                        </span>
+                        <span class="text-xl md:text-xl">Profile</span>
+                    </li>
+
+                    <li class="flex gap-3 items-center">
+                        <span class="material-symbols-outlined !text-3xl">
+                            more_horiz
+                        </span>
+                        <span class="text-xl md:text-xl">More</span>
+                    </li>
+                </ul>
+                <button
+                    class="w-full py-1 md:py-3 font-bold rounded-3xl bg-blue-500  cursor-pointer hover:bg-blue-300 transition-all duration-500 hover:text-white">
+                    Post
+                </button>
+
+            </div>
+            <div class="mt-auto flex flex-row gap-3 p-3">
+                <img src="images/obito.jpg" alt="img"
+                    class="rounded-full object-cover size-10 cursor-pointer hover:brightness-75 transition-all duration-500">
+                <div class="flex-row flex justify-between items-center flex-1">
+                    <span>
+                        <h2 class="text-white text-sm cursor-pointer">Jason Rise</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@jasonflowerboy</p>
+                    </span>
+                    <p class="cursor-pointer">&middot;&middot;&middot;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1 second md:flex-1 min-w-0 h-screen overflow-y-auto border-x border-gray-400 scrollbar-none">
+            <div class="flex flex-row gap-2 p-4">
+                <div id="menu" class=" flex xl:hidden cursor-pointer ">
+                    <span  class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+
+                <span class="flex-1 flex justify-evenly items-center">
+                    <p>For you</p>
+                    <p>Following</p>
+                </span>
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+            </div>
+
+            <div class="w-full h-auto flex flex-row gap-3 p-4 border-y border-gray-700">
+                <img src="images/obito.jpg" alt="image" class="size-10 rounded-full object-cover">
+                <div class="flex flex-col gap-2 flex-1 space-y-6">
+                    <h1 class="text-gray-400 text-sm font-semibold">What is happening!?</h1>
+                    <div class="flex flex-row justify-between ">
+                        <div class="icons [&>span]:text-blue-400 [&>span]:cursor-pointer">
+                            <span class="material-symbols-outlined">
+                                image
+                            </span>
+                            <span class="material-symbols-outlined">
+                                gif_box
+                            </span>
+                            <span class="material-symbols-outlined">
+                                list
+                            </span>
+                            <span class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                        </div>
+                        <button
+                            class="bg-blue-500 text-white font-semibold px-4 py-1 rounded-4xl text-xs cursor-pointer hover:bg-blue-300 transition-all duration-500">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-fit m-auto py-3 text-sm text-blue-400 cursor-pointer hover:text-blue-300 transition-all duration-500">
+                Show 35 posts</div>
+
+
+            <!--Posts -->
+            <div class="flex flex-row gap-4 p-4 border-y-[1px] border-gray-600">
+                <img src="images/swaelee.jpg" alt="img"
+                    class="size-10 object-cover rounded-full shrink-0  cursor-pointer">
+                <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <div class="details flex flex-row gap-2 items-center ">
+                        <h2 class="text-white font-semibold text-sm cursor-pointer">Swae Lee</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@swaelee &middot; 16h</p>
+                    </div>
+                    <h2 class="text-white  text-xs font-light">album coming soon...</h2>
+                    <img src="images/swaebae.jpg" alt="image"
+                        class="w-full max-w-200 max-h-85 mt-3 md:max-h-110 rounded-xl object-cover ">
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-4 p-4 border-y-[1px] border-gray-600">
+                <img src="images/WHERE SHE ATTT.jpg" alt="img"
+                    class="size-10 object-cover rounded-full shrink-0  cursor-pointer">
+                <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <div class="details flex flex-row gap-2 items-center ">
+                        <h2 class="text-white font-semibold text-sm cursor-pointer">Drake</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@chamgpagnepapi &middot; 24m</p>
+                    </div>
+                    <h2 class="text-white  text-xs font-light">STAKE</h2>
+                    <img src="images/darklanes.jpg " alt="image"
+                        class="w-full max-w-200 max-h-85 mt-3 md:max-h-110 rounded-xl object-cover ">
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-4 p-4 border-y-[1px] border-gray-600">
+                <img src="images/rize2.jpg" alt="img"
+                    class="size-10 object-cover rounded-full shrink-0  cursor-pointer">
+                <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <div class="details flex flex-row gap-2 items-center ">
+                        <h2 class="text-white font-semibold text-sm cursor-pointer">Rizexxx</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@rize &middot; 2h</p>
+                    </div>
+                    <h2 class="text-white  text-xs font-light">luv</h2>
+                    <img src="images/Tokyo ghoul.jpg" alt="image"
+                        class="w-full max-w-200 max-h-85 mt-3 md:max-h-110 rounded-xl object-cover ">
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-4 p-4 border-y-[1px] border-gray-600">
+                <img src="images/mulanbae.jpg" alt="img"
+                    class="size-10 object-cover rounded-full shrink-0  cursor-pointer">
+                <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <div class="details flex flex-row gap-2 items-center ">
+                        <h2 class="text-white font-semibold text-sm cursor-pointer">Yoon Young Bae</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@mulanbae &middot; 5h</p>
+                    </div>
+                    <h2 class="text-white  text-xs font-light">Chanel night</h2>
+                    <img src="images/mulan.jpg" alt="image"
+                        class="w-full max-w-200 max-h-85 mt-3 md:max-h-110 rounded-xl object-cover ">
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-4 p-4 border-y-[1px] border-gray-600">
+                <img src="images/Demystifying the Golden State Warriors.jpg" alt="img"
+                    class="size-10 object-cover rounded-full shrink-0  cursor-pointer">
+                <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <div class="details flex flex-row gap-2 items-center ">
+                        <h2 class="text-white font-semibold text-sm cursor-pointer">Kevin Durant</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@easymoneysniper &middot; 5h</p>
+                    </div>
+                    <h2 class="text-white  text-xs font-light">35</h2>
+                    <img src="images/Kevin Durant.jpg" alt="image"
+                        class="w-full max-w-200 max-h-85 mt-3 md:max-h-110 rounded-xl object-cover ">
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-4 p-4 border-y-[1px] border-gray-600">
+                <img src="images/jung.jpg" alt="img"
+                    class="size-10 object-cover rounded-full shrink-0  cursor-pointer object-top">
+                <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <div class="details flex flex-row gap-2 items-center ">
+                        <h2 class="text-white font-semibold text-sm cursor-pointer">Jung Hoyeon</h2>
+                        <p class="text-gray-500 text-xs cursor-pointer">@hoyeonyy &middot; 8h</p>
+                    </div>
+                    <h2 class="text-white  text-xs font-light">@LouisVuiton</h2>
+                    <img src="images/hoyeon.jpg" alt="image"
+                        class="w-full max-w-200 rounded-xl max-h-85 mt-3 md:max-h-110  object-cover">
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div
+            class="hidden xl:flex third xl:w-[30%]  bg-black w-[30%] h-screen px-6 py-2  flex-col gap-y-2 overflow-y-auto scrollbar-none">
+            <input type="text" class="w-[90%] rounded-2xl bg-[#16181c] p-2" placeholder="Search">
+
+            <div class="w-[90%] p-4 rounded-lg h-auto bg-[#16181c] flex flex-col gap-2.5">
+                <h1 class="text-xl font-extrabold">Subscribe to Premium</h1>
+                <h2 class="text-xs">Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+                </h2>
+                <button
+                    class="rounded-2xl px-3 py-1.5 bg-blue-400 w-fit cursor-pointer hover:bg-blue-300 transition-all duration-500">Subscribe</button>
+            </div>
+
+            <div class="w-[90%] p-4 rounded-lg h-auto bg-[#16181c] flex flex-col gap-2.5">
+                <h1 class="text-xl font-extrabold">What's Happening</h1>
+
+                <div class="w-full flex flex-row gap-1 h-auto">
+                    <div class="flex-1">
+                        <h2 class="text-md ">Menswear Fashion Week</h2>
+                        <p class="text-xs text-gray-600">Fashion &middot; LIVE</p>
+                    </div>
+                    <div class="h-20 w-20">
+                        <img src="images/fashionPic.jpg" alt="fashionIMG"
+                            class="w-full h-full object-cover object-top rounded-lg">
+                    </div>
+                </div>
+
+                <div class="w-[90%] rounded-lg h-auto flex flex-col gap-1.7">
+                    <div class="flex flex-row justify-between">
+                        <span class="text-gray-500 text-xs">Culture &middot; Trending</span>
+                        <span class="text-gray-500 text-sm">&middot;&middot;&middot;</span>
+                    </div>
+                    <h1 class="text-white font-bold text-sm">#GTA6</h1>
+                    <p class="text-gray-500 text-xs">986K posts</p>
+                </div>
+
+                <div class="w-[90%] rounded-lg h-auto flex flex-col gap-1.7">
+                    <div class="flex flex-row justify-between">
+                        <span class="text-gray-500 text-xs">Technology &middot; Trending</span>
+                        <span class="text-gray-500 text-sm">&middot;&middot;&middot;</span>
+                    </div>
+                    <h1 class="text-white font-bold text-sm">#Notion</h1>
+                    <p class="text-gray-500 text-xs">26.3K posts</p>
+                </div>
+            </div>
+
+            <div class="w-[90%] p-4 rounded-lg h-auto bg-[#16181c] flex flex-col gap-2.5">
+                <h1>Who To Follow</h1>
+
+                <div class="flex flex-row gap-2 h-[40px] w-full">
+                    <span class="h-[40px] w-[40px]">
+                        <img src="images/image.jpg " alt="image"
+                            class="h-full w-full rounded-full object-cover shrink-0">
+                    </span>
+                    <div class="flex-1 flex flex-row justify-between items-center min-w-0">
+                        <span class="space-y-0.5">
+                            <h1 class="text-white font-semibold text-sm truncate">Alice May</h1>
+                            <p class="text-gray-700 text-xs truncate">@alicemay24</p>
+                        </span>
+                        <button
+                            class="text-black bg-white px-3 py-2 font-medium rounded-3xl text-sm shrink-0 cursor-pointer hover:bg-blue-500 transition-all duration-500 hover:text-white">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-2 h-[40px] w-full">
+                    <span class="h-[40px] w-[40px]">
+                        <img src="images/Skirk⋆𐙚₊˚⊹♡.jpg " alt="image"
+                            class="h-full w-full rounded-full object-cover shrink-0">
+                    </span>
+                    <div class="flex-1 flex flex-row justify-between items-center min-w-0">
+                        <span class="space-y-0.5">
+                            <h1 class="text-white font-semibold text-sm truncate">Skirk</h1>
+                            <p class="text-gray-700 text-xs truncate">@skirk</p>
+                        </span>
+                        <button
+                            class="text-black bg-white px-3 py-2 font-medium rounded-3xl text-sm shrink-0 cursor-pointer hover:bg-blue-500 transition-all duration-500 hover:text-white">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-2 h-[40px] w-full">
+                    <span class="h-[40px] w-[40px] bg-black rounded-full">
+                        <img src="images/MOMO - TWICE.jpg " alt="image"
+                            class="h-full w-full rounded-full object-cover object-top shrink-0 ">
+                    </span>
+                    <div class="flex-1 flex flex-row justify-between items-center min-w-0">
+                        <span class="space-y-0.5">
+                            <h1 class="text-white font-semibold text-sm truncate">Momo Hirai</h1>
+                            <p class="text-gray-700 text-xs truncate">@momo</p>
+                        </span>
+                        <button
+                            class="text-black bg-white px-3 py-2 font-medium rounded-3xl text-sm shrink-0 cursor-pointer hover:bg-blue-500 transition-all duration-500 hover:text-white">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-2 h-[40px] w-full">
+                    <span class="h-[40px] w-[40px]">
+                        <img src="images/Lusher Lee.jpg " alt="image"
+                            class="h-full w-full rounded-full object-cover shrink-0 object-bottom">
+                    </span>
+                    <div class="flex-1 flex flex-row justify-between items-center min-w-0">
+                        <span class="space-y-0.5">
+                            <h1 class="text-white font-semibold text-sm truncate">Lusher Lee</h1>
+                            <p class="text-gray-700 text-xs truncate">@lululee</p>
+                        </span>
+                        <button
+                            class="text-black bg-white px-3 py-2 font-medium rounded-3xl text-sm shrink-0 cursor-pointer hover:bg-blue-500 transition-all duration-500 hover:text-white">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <h1 class="text-blue-500 text-xs mt-2 cursor-pointer">Click to view more</h1>
+            </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
